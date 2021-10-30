@@ -9,7 +9,9 @@ namespace FizzBuzzPackage.Tests
         {
             var result = FizzBuzz.GetResult(0);
 
-            Assert.Equal(result, "None");
+            const string EXPECTED = "----";
+
+            Assert.Equal(result, EXPECTED);
         }
 
         [Theory]
@@ -20,7 +22,9 @@ namespace FizzBuzzPackage.Tests
         {
             var result = FizzBuzz.GetResult(x);
 
-            Assert.Equal(result, "Fizz");
+            const string EXPECTED = "Fizz";
+
+            Assert.Equal(result, EXPECTED);
         }
 
         [Theory]
@@ -31,7 +35,9 @@ namespace FizzBuzzPackage.Tests
         {
             var result = FizzBuzz.GetResult(x);
 
-            Assert.Equal(result, "Buzz");
+            const string EXPECTED = "Buzz";
+
+            Assert.Equal(result, EXPECTED);
         }
 
         [Theory]
@@ -42,11 +48,13 @@ namespace FizzBuzzPackage.Tests
         {
             var result = FizzBuzz.GetResult(x);
 
-            Assert.Equal(result, "FizzBuzz");
+            const string EXPECTED = "FizzBuzz";
+
+            Assert.Equal(result, EXPECTED);
         }
 
         [Theory]
-        [InlineData(-1, "None")]
+        [InlineData(-1, "----")]
         [InlineData(-9, "Fizz")]
         [InlineData(-20, "Buzz")]
         [InlineData(-120, "FizzBuzz")]

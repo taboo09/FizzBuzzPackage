@@ -16,7 +16,7 @@ namespace FizzBuzzPackage
             }  
             if (result.Length == 0 || number == 0)  
             {  
-                result = "None"; 
+                result = "----"; 
             }  
 
             return result;
