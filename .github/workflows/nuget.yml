@@ -25,6 +25,6 @@ jobs:
     - name: Test
       run: dotnet test src/FizzBuzzPackage.Tests --no-restore --verbosity normal
     - name: Pack the project
-      run: dotnet pack src/FizzBuzzPackage --output .
+      run: dotnet pack src/FizzBuzzPackage --configuration Release --output .
     - name: Publish the package to GitHub Packages
       run: dotnet nuget push FizzBuzz.*.nupkg -s https://nuget.pkg.github.com/taboo09/index.json -k ${{secrets.GITHUB_TOKEN}} --skip-duplicate
