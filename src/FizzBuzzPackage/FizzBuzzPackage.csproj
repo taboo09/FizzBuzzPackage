@@ -7,7 +7,7 @@
     <Authors>Marius Stanciu</Authors>
     <Company>Taboo09</Company>
     <PackageDescription>FizzBuzz Package</PackageDescription>
-    <RepositoryUrl>https://nuget.pkg.github.com/taboo09/index.json</RepositoryUrl>
+    <RepositoryUrl>https://github.com/taboo09/FizzBuzzPackage</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
