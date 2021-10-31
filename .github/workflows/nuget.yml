@@ -27,4 +27,4 @@ jobs:
     - name: Pack the project
       run: dotnet pack src/FizzBuzzPackage --configuration Release --output .
     - name: Publish the package to GitHub Packages
-      run: dotnet nuget push FizzBuzz.*.nupkg -s https://nuget.pkg.github.com/taboo09/index.json -k ${{secrets.GITHUB_TOKEN}} --skip-duplicate
+      run: dotnet nuget push FizzBuzz*.nupkg -s https://nuget.pkg.github.com/taboo09/index.json -k ${{secrets.GITHUB_TOKEN}} --skip-duplicate
