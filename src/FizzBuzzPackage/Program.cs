@@ -6,7 +6,9 @@ namespace FizzBuzzPackage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var fizzBuzzResult = FizzBuzz.GetResult(555);
+
+            Console.WriteLine(fizzBuzzResult);
         }
     }
 }
